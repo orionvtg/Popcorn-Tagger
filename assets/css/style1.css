@@ -23,7 +23,7 @@ button {
   font-size: 30px;
   background: rgb(251, 255, 0);
   outline-style: groove;
-  outline-color: rgb(0, 233, 233);
+  outline-color: rgb(35, 0, 233);
 }
 
 button:hover {

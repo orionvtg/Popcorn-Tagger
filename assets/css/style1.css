@@ -28,4 +28,5 @@ button {
 button:hover {
   background-color: rgb(238, 234, 16);
   border: black 10px;
+  font: 100;
 }

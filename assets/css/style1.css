@@ -23,7 +23,7 @@ button {
   font-size: 30px;
   background: rgb(251, 255, 0);
   outline-style: groove;
-  outline-color: teal;
+  outline-color: blue;
 }
 
 button:hover {

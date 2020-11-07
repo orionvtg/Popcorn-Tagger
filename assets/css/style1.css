@@ -1,0 +1,31 @@
+body { 
+  background-image: url("../../assets/ig/1stpagebackground.jpg");
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-attachment: fixed;
+  background-size:  cover;
+}
+
+#logotext {
+  position: fixed;
+  left: 10%;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 50px;
+  color: #FFE695
+}
+
+
+button {
+  position: fixed;
+  top: 60%;
+  left: 35%;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  background: rgb(251, 255, 0);
+  outline-style: groove;
+  outline-color: rgb(0, 233, 233);
+}
+
+button:hover {
+  background-color: rgb(238, 234, 16);
+}

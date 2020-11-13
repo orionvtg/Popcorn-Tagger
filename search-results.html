@@ -8,22 +8,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 <body>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <h1 id="logotext">Popcorn Tagger</h1>          
-          <a class="navbar-item" href="https://bulma.io">
-            <img id="logoimg" src="./assets/ig/logo.jpg" alt="logo" width="100" height="100">     
-          </a>
 
- 
-      
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-      </nav>
+     <!--logo nav-->
+    
+     <nav>
+      <div class="orange nav-wrapper">
+        <a href="#!" id= "logotext" class="brand-logo">Popcorn Tagger</a>
+        <img id="logoimg" src="./assets/ig/logo.jpg" alt="logo" width="64" height="64">    
+        <ul class="right hide-on-med-and-down">
+          <li><div class="nav-wrapper">
+            <form>
+              <div class="input-field">
+                <input id="search" type="search" required>
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+              </div>
+            </form>
+          </div></li>
+          <li><a class="waves-effect yellow lighten-2 btn-large">Large Button</a></li>
+        </ul>
+      </div>
+    </nav>
+    
 
     <script src="./assets/js/page1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

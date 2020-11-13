@@ -7,7 +7,6 @@ body {
 }
 
 #logotext {
-  position: fixed;
   left: 10%;
   font-family: 'Courier New', Courier, monospace;
   font-size: 50px;

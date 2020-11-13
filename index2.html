@@ -1,37 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search</title>
-    <link rel="stylesheet" href="./assets/css/style1.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-</head>
-<body>
-
-     <!--logo nav-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!-- <link rel="stylesheet" href="../assets/css/materialize.css">  -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <title>Popcorn Tagger</title>
+  </head>
+  <body>
+    <h1>Popcorn Tagger</h1>
+    <h2>5 Most Popular Recent Movies on TMDB Genre:<h2 id='selectedGenre'></h2>
+    <br/>
+    <form>
+      <select id="genre">
+      <option value="">All</option>
+      <option value="35">Comedy</option>
+      <option value="28">Action</option>
+      <option value="12">Adventure</option>
+      <option value="80">Crime</option>
+      <option value="99">Documentary</option>
+      <option value="18">Drama</option>
+      <option value="16">Animated</option>
+      <option value="9648">Mystery</option>
+      <option value="878">Science Fiction</option>
+      <option value="53">Thriller</option>
+      <option value="37">Western</option>
+  
+    </select>
+      <button onclick="myFunction(event)">Submit</button>
+      </form>
     
-     <nav>
-      <div class="orange nav-wrapper">
-        <a href="#!" id= "logotext" class="brand-logo">Popcorn Tagger</a>
-        <img id="logoimg" src="./assets/ig/logo.jpg" alt="logo" width="64" height="64">    
-        <ul class="right hide-on-med-and-down">
-          <li><div class="nav-wrapper">
-            <form>
-              <div class="input-field">
-                <input id="search" type="search" required>
-                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                <i class="material-icons">close</i>
-              </div>
-            </form>
-          </div></li>
-          <li><a class="waves-effect yellow lighten-2 btn-large">Large Button</a></li>
-        </ul>
-      </div>
-    </nav>
-    
+    <br/>
+    <br/>
+    <h3>Most Popular Movie Title:</h3><h3 id='movieTitle1'></h3>
+    <h3>Avg Rating:</h4><h4 id='movieRating1'></h3>
+    <h3>Release Date:</h3><h3 id='movieDate1'></h3>
+    <p>Description:</p><p id='movieOverview1'></p>
+    <h3>Poster:</h3><div id='moviePoster1'></div>
+    <br/>
+    <br/>
+    <h3>2nd Most Popular Movie Title:</h3><h3 id='movieTitle2'></h3>
+    <h3>Avg Rating:</h4><h4 id='movieRating2'></h3>
+    <h3>Release Date:</h3><h3 id='movieDate2'></h3>
+    <p>Description:</p><p id='movieOverview2'></p>
+    <h3>Poster:</h3><div id='moviePoster2'></div>
+    <br/>
+    <br/>
+    <h3>3rd Most Popular Movie Title:</h3><h3 id='movieTitle3'></h3>
+    <h3>Avg Rating:</h4><h4 id='movieRating3'></h3>
+    <h3>Release Date:</h3><h3 id='movieDate3'></h3>
+    <p>Description:</p><p id='movieOverview3'></p>
+    <h3>Poster:</h3><div id='moviePoster3'></div>
+    <br/>
+    <br/>
+    <h3>4th Most Popular Movie Title:</h3><h3 id='movieTitle4'></h3>
+    <h3>Avg Rating:</h4><h4 id='movieRating4'></h3>
+    <h3>Release Date:</h3><h3 id='movieDate4'></h3>
+    <p>Description:</p><p id='movieOverview4'></p>
+    <h3>Poster:</h3><div id='moviePoster4'></div>
+    <br/>
+    <br/>
+    <h3>5th Most Popular Movie Title:</h3><h3 id='movieTitle5'></h3>
+    <h3>Avg Rating:</h4><h4 id='movieRating5'></h3>
+    <h3>Release Date:</h3><h3 id='movieDate5'></h3>
+    <p>Description:</p><p id='movieOverview5'></p>
+    <h3>Poster:</h3><div id='moviePoster5'></div>
+    <br/>
+    <br/>
 
-    <script src="./assets/js/page1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-</body>
+    <script src="./assets/js/materialize.js"></script>
+  </body>
 </html>

@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var instances = M.Sidenav.init(elems, options);
 });
 
-/ API_KEY=0538a44ea7ab03c73ebbfcd9542b4ac3
+// API_KEY=0538a44ea7ab03c73ebbfcd9542b4ac3
 // for tmdb
 // docs
 //https://developers.themoviedb.org/3/discover/movie-discover
@@ -20,23 +20,28 @@ let baseUrl = 'https://image.tmdb.org/t/p/original';
 //modified api call with key:
 //https://api.themoviedb.org/3/discover/movie?api_key=0538a44ea7ab03c73ebbfcd9542b4ac3&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1
 //add variables here
- var data = 
+ var data;
 //add fetch request
 //https://api.themoviedb.org/3/genre/movie/list?api_key=0538a44ea7ab03c73ebbfcd9542b4ac3&language=en-US
 fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=0538a44ea7ab03c73ebbfcd9542b4ac3&language=en-US`)
 .then(response => response.json())
 .then(data => {
     console.log(data)
-    console.log("genre", data.genres[0].name)
+    //console.log("genre", data.genres[0].name)
     for(i=0; i < data.genres.length; i++){
         console.log(data.genres[i].id)
-        var button = document.createElement("button")
-        button.textContent = data.genres[i].name
-        button.setAttribute("data-id", data.genres[i].id)
-        var genreId = data.genres[i].id
+        var option = document.createElement("option")
+        option.innerHTML = data.genres[i].name
+        option.setAttribute("value", data.genres[i].id)
+        document.querySelector("#genreSelect").appendChild(option)
+        // var genreId = data.genres[i].id
         /*fetch(`https://api.themoviedb.org/3/discover/movie?api_key=0538a44ea7ab03c73ebbfcd9542b4ac3&language=en-US&with_genres=${genreId}&page=1`).then(res => res.json()).then(data => console.log(data))*/
     }
+    var elemsSelect = document.querySelectorAll('select');
+    M.FormSelect.init(elemsSelect, {});
 })
+
+/*
 fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=0538a44ea7ab03c73ebbfcd9542b4ac3&language=en-US`)
 .then(response => response.json())
 .then(data => {
@@ -90,3 +95,4 @@ fetch(`https://api.themoviedb.org/3/discover/movie?api_key=0538a44ea7ab03c73ebbf
 //output = localStorage.getItem('output2');
 //console.log(output2);
 //document.querySelector('#output').value = output2;
+*/

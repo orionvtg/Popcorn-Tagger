@@ -1,5 +1,5 @@
 body { 
-  background-image: url("../../assets/ig/1stpagebackground.jpg");
+
   background-position: center center;
   background-repeat:  no-repeat;
   background-attachment: fixed;
@@ -17,16 +17,20 @@ body {
 
 button {
   position: fixed;
-  top: 60%;
-  left: 35%;
+  top: 30%;
+  left: 30%;
   font-family: 'Courier New', Courier, monospace;
   font-size: 30px;
-  background: rgb(251, 255, 0);
+  background: #FFE695;
   outline-style: groove;
-  outline-color: rgb(226, 101, 17);
+  outline-color: rgb(187, 115, 66);
 }
 button:hover {
-  background-color: rgb(238, 234, 16);
+  background-color: #ffc815;
   border: black 10px;
   font: 100;
+}
+
+#logoimg {
+  margin-left: 30px;
 }

@@ -5,54 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Popcorn Tagger</title>
     <link rel="stylesheet" href="./assets/css/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 
 <body>
-    <div id="bg-img">
-<p>porncorn Donny Pornny</p>
-    <section class="mySection">
-        <div class="columns is-vcentered">
-          <div class="column is-5-tablet is-5-desktop">
-            <div class="myHero">
-              <div class="hr"></div>
-              <h1>Loren Ipsum</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta a et ipsa voluptates in velit rem minus nihil, blanditiis nisi, quidem tempore quos qui quas. Blanditiis hic dolorem fugiat? Blanditiis!</p>
-            </div>
-          </div>
-          <div class="column is-7-tablet is-7-desktop">
-            <figure class="image is4by3">
-              <img src="http://i64.tinypic.com/29gedzq.png">
-            </figure>
-          </div>
-        </div>
-      </section>
 
     <!--logo nav-->
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <h1 id="logotext">Popcorn Tagger</h1>          
-          <a class="navbar-item" href="https://bulma.io">
-            <img src="./assets/ig/logo.jpg" alt="logo" width="100" height="100">     
-          </a>
-
- 
-      
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-      </nav>
-
-    <!--button to next page-->
-    <div class="container">
-        <div id="home" class="intro">
-            <a href="search-results.html"><button onclick="setTimeout">Start Your Popcorn Journey Here</button></a>
-        </div>
-
-
+    
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" id= "logotext" class="brand-logo">Popcorn Tagger</a>
+        <img id="logoimg" src="./assets/ig/logo.jpg" alt="logo" width="64" height="64">    
+        <ul class="right hide-on-med-and-down">
+          <li><div class="nav-wrapper">
+            <form>
+              <div class="input-field">
+                <input id="search" type="search" required>
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+              </div>
+            </form>
+          </div></li>
+          <li><a class="waves-effect waves-light btn-large">Large Button</a></li>
+        </ul>
+      </div>
+    </nav>
 
 <script src="./assets/js/page1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>

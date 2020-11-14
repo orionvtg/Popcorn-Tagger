@@ -1,34 +1,74 @@
 body { 
-
+  background-image: url("../ig/background.jpg");
   background-position: center center;
   background-repeat:  no-repeat;
   background-attachment: fixed;
   background-size:  cover;
 }
-
 #logotext {
+  position: ;
   left: 10%;
   font-family: 'Courier New', Courier, monospace;
   font-size: 50px;
   color: #FFE695
 }
-
-
 button {
-  top: 30%;
+  top: 20%;
   left: 30%;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 30px;
+  font-size: 16px;
   background: #FFE695;
   outline-style: groove;
-  outline-color: rgb(187, 115, 66);
+  outline-color: rgb(216, 160, 7);
 }
 button:hover {
-  background-color: #ffc815;
+  background-color: #FFC815;
   border: black 10px;
   font: 100;
 }
-
 #logoimg {
   margin-left: 30px;
+}
+
+#appname {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 50px;
+  color: #FFE695;
+}
+#bigtitle {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+}
+#genre {
+  background-color: #FFE695;
+  font-size: 20px;
+}
+#rank {
+  color: #B71C1C;
+  font-size: 30px;
+}
+#movieTitle1, #movieTitle2, #movieTitle3, #movieTitle4, #movieTitle5 {
+  color: #FFA726;
+  font-size: 30px;
+}
+#ratingtext {
+  font-size: 25px;
+}
+#movieRating1, #movieRating2, #movieRating3, #movieRating4, #movieRating5 {
+  font-size: 25px;
+}
+#dates {
+  font-size: 25px;
+}
+#movieDate1, #movieDate2, #movieDate3, #movieDate4, #movieDate5 {
+  font-size: 25px;
+}
+#description {
+  font-size: 25px; 
+}
+#movieOverview1, #movieOverview2, #movieOverview3, #movieOverview4, #movieOverview5 {
+  font-family: 'Courier New', Courier, monospace;
+  width: 45em;
+  display: block;
+  color: #FFFEFE;
 }

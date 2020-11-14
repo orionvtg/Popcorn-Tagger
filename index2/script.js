@@ -63,7 +63,7 @@ function myFunction(event) {
     const genreSelect = document.querySelector('#genre')
     let genre = genreSelect.value;
     // const genreName = Array.from(document.querySelectorAll('#genre option')).filter(option => option.selected)[0].innerText;
-    console.log('genre:', genre);
+    // console.log('genre:', genre);
 
     fetch(`https://api.themoviedb.org/3/discover/movie?api_key=0538a44ea7ab03c73ebbfcd9542b4ac3&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=${genre}`)
         .then(response => response.json())
@@ -108,5 +108,19 @@ function myFunction(event) {
         })
         .catch(error => {
             console.log(error)
-        })
+        });
+
+        fetch("https://imdb8.p.rapidapi.com/title/auto-complete?q=game%20of%20thr", {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-key": "SIGN-UP-FOR-KEY",
+		"x-rapidapi-host": "imdb8.p.rapidapi.com"
+	}
+})
+.then(response => {
+	console.log(response);
+})
+.catch(err => {
+	console.error(err);
+});
 }

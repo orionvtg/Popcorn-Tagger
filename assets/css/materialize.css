@@ -5,6 +5,11 @@ body {
   background-attachment: fixed;
   background-size:  cover;
 }
+
+.resultContainer {
+  margin-left: 30px;
+}
+
 #logotext {
   position: ;
   left: 10%;
@@ -51,6 +56,18 @@ button:hover {
   color: #FFA726;
   font-size: 30px;
 }
+
+#imdbRating1 #imdbRating2 #imdbRating3 #imdbRating4 #imdbRating5 {
+  color: #FFA726;
+  font-size: 30px;
+}
+
+.ratingTextColor {
+  color: #FFA726;
+  font-size: 30px;
+}
+
+
 #ratingtext {
   font-size: 25px;
 }
@@ -65,10 +82,14 @@ button:hover {
 }
 #description {
   font-size: 25px; 
+  
+  
 }
 #movieOverview1, #movieOverview2, #movieOverview3, #movieOverview4, #movieOverview5 {
   font-family: 'Courier New', Courier, monospace;
-  width: 45em;
+  width: 40em;
   display: block;
   color: #FFFEFE;
+  margin-left: 20px;
+  font-weight: bold;
 }

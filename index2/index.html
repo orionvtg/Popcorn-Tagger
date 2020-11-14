@@ -3,13 +3,55 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <!-- <link rel="stylesheet" href="../assets/css/materialize.css">  -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="../assets/css/materialize.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <title>Popcorn Tagger</title>
   </head>
   <body>
+    <!--logo nav-->
+
+    <nav>
+      <div class="orange nav-wrapper">
+        <a href="#!" id= "logotext" class="brand-logo">Popcorn Tagger</a>
+        <img id="logoimg" src="../assets/ig/logo.jpg" alt="logo" width="64" height="64">
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <div class="nav-wrapper">
+              <form>
+                <div class="input-field">
+                  <input id="search" type="search" required>
+                  <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                  <i class="material-icons">close</i>
+                </div>
+              </form>
+            </div>
+          </li>
+          <li><a class="waves-effect yellow darken-1 btn-large modal-trigger" href="#modal1">Genre Filter</a></li>
+        </ul>
+      </div> 
+    </nav>
+    
+    <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <div class="input-field col s12">
+        <select id="genreSelect">
+          <option value="" selected>Genres</option>
+          </option>
+          
+        </select>
+        <label>Materialize Select</label>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a id='search' onclick='myFunction1(event)' href="#!" class="modal-close waves-effect waves-green btn-flat">Search</a>
+    </div>
+  </div>
+    
+    </div>
     <h1>Popcorn Tagger</h1>
-    <h2>5 Most Popular Recent Movies on TMDB Genre:<h2 id='selectedGenre'></h2>
+    <h2>5 Most Popular Recent Movies on TMDB (Genre:<h2 id='selectedGenre'></h2>)</h2>
     <br/>
     <form>
       <select id="genre">
@@ -68,6 +110,6 @@
     <br/>
     <br/>
 
-    <script src="./assets/js/materialize.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

@@ -93,3 +93,7 @@ button:hover {
   margin-left: 20px;
   font-weight: bold;
 }
+
+#display {
+  display: none;
+}

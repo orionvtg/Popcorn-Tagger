@@ -78,6 +78,8 @@ function myFunction(event) {
     // const genreName = Array.from(document.querySelectorAll('#genre option')).filter(option => option.selected)[0].innerText;
     console.log('genreSelect:', genre);
 
+    document.getElementById("display").style.display = "block"
+    
     fetch(`https://api.themoviedb.org/3/discover/movie?api_key=0538a44ea7ab03c73ebbfcd9542b4ac3&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=${genre}`)
         .then(response => response.json())
         .then(data => {
